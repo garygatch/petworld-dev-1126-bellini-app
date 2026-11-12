@@ -416,6 +416,7 @@
   "description": "## Country card\nReusable slate/teal summary card for a caller-supplied normalized country. Uses Bellini box layouts, text nodes, badges, and a core button with an arrow icon. The optional flag is rendered as text only; no assets, API calls, or navigation are used.\n\n### Contract\n`country`: `{ code: string, name: string, native: string, emoji: string, capital: string, currency: string, phone: string, continentName: string, languages: string[] }`. Supply normalized values; the card does not invent or fetch country data and never mutates the object. Missing capital/currency display an em dash; missing flag, ISO, or continent are omitted.\n\n`onSelect({ country })` emits the supplied country through the `country` callback local when the details button is activated. The core button provides native keyboard activation; its surrounding focus-within ring makes keyboard focus visible. The card itself is not an interactive navigation target.",
   "modules": [],
   "name": "pw-country-card",
+  "revision": 0,
   "styles": [],
   "type": "custom-component",
   "variables": [

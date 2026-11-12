@@ -180,6 +180,7 @@
   "description": "## Metric card\nReusable, full-width white metric card with a subtle border, restrained rounded corners, an uppercase muted label, a navy metric, and optional hint. Uses a built-in column box layout and Tailwind appearance utilities.\n\n### Inputs\n`label`, `value`, and `hint` are plain strings rendered as text, never injected HTML. `icon` is an optional string reserved for a supported core Icon renderer. Component discovery found no core Icon component, so this version intentionally omits the icon rather than substituting images, injected markup, or an interactive control.\n\n### Integration\nNo services or APIs. Width follows its parent; long content wraps on narrow screens. The metric remains a string so callers can supply currency, percentages, or other formatted values.",
   "modules": [],
   "name": "pw-stat-card",
+  "revision": 0,
   "styles": [],
   "type": "custom-component",
   "variables": []

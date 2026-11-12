@@ -399,6 +399,7 @@
   "description": "## Feedback panel\nReusable, nonmodal feedback for `loading`, `error`, and `empty` states. Uses verified Bellini box layouts, text nodes, Badge icons, Progress, and Button. Slate surfaces and teal details keep the panel calm; errors use a restrained red outline badge.\n\n### Public interface\n`kind` is a string (`loading`, `error`, or `empty`); unrecognized values use empty guidance. `title` and `message` are plain, escaped text with state-specific fallbacks. `retryLabel` defaults to Retry. Supply `onRetry` only when retry is available; it is invoked without arguments and only from the error state. The parent owns retry/loading transitions.\n\n### Accessibility\nA polite, atomic status region announces feedback without moving focus. Decorative icons and progress are hidden from assistive technology. The animated core progress is removed from display under prefers-reduced-motion and replaced with a static core icon badge using Tailwind motion variants. No assets, API calls, timers, or modal behavior.",
   "modules": [],
   "name": "pw-feedback",
+  "revision": 0,
   "styles": [],
   "type": "custom-component",
   "variables": [

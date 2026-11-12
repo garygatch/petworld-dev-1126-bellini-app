@@ -631,6 +631,21 @@
           "value": "100%"
         }
       ]
+    },
+    {
+      "attributes": [
+        {
+          "property": "core",
+          "value": ""
+        }
+      ],
+      "children": [],
+      "classList": [],
+      "expressions": [],
+      "name": "Badge",
+      "nodeName": "bln-badge",
+      "ownerName": null,
+      "type": "core-component"
     }
   ],
   "description": "## Completed PetWorld workspace\nPersistent shell for the completed workspace.home, workspace.pets, workspace.pet-detail and workspace.countries children. The home page declares parentPageName workspace and renders at /app/home. Use the top-level workspace state as the app default entry: exact workspace arrivals redirect to workspace.home with $state.go('workspace.home', {}, { location: 'replace' }), replacing the parent entry in browser history.\n\nA dedicated lifecycle method installs an exact-parent success hook and one deferred initial check. Angular $timeout defers navigation until after the current transition/digest; registration, current-state and active-transition checks protect child deep links and concurrent navigation. A shared queued/in-flight guard deduplicates initialization and success-hook work. Rejections are handled without automatic retries or redirect loops; the existing overview link remains available. Hooks and pending timers are cleaned up after successful workspace exit. syncNavigation only computes menu state and never initiates transitions.\n\nCore Navigation, declarative links, child-pages outlet, responsive collapse, theme hooks, keyboard focus behavior, viewport minimum sizing and Petstore v2/Countries GraphQL references are preserved. Media-query and focus listeners are removed after successful workspace exit.",
